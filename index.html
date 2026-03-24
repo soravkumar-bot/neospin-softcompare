@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neospin - Compare Best Software Tools</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <h1 class="logo">Neospin</h1>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+      <a href="#">Home</a>
+      <a href="top-tools.html">Top Tools</a>
+      <a href="comparison.html">Compare</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="blog.html">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero premium-hero">
+  <div class="container">
+    <h2 class="gradient-text">Compare the Best Software Tools in Minutes</h2>
+    <p>Discover, compare & choose top-rated tools trusted globally.</p>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search AI tools, VPNs, marketing tools...">
+      <button>Explore →</button>
+    </div>
+
+    <div class="hero-stats">
+      <div><strong>10K+</strong><br><span>Users</span></div>
+      <div><strong>2026</strong><br><span>Updated</span></div>
+      <div><strong>4.8★</strong><br><span>Rating</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  Trusted by users worldwide • Secure • Expert Rated
+</section>
+
+<!-- TOP PICKS -->
+<section class="container">
+  <h2>🔥 Top Picks on Neospin</h2>
+
+  <div class="tool-grid">
+
+    <div class="card glass">
+      <h3>AI Platform</h3>
+      <p>Automation & productivity</p>
+      <span>⭐ 4.9</span>
+      <button class="cta">View Deal →</button>
+    </div>
+
+    <div class="card glass featured">
+      <h3>Secure VPN</h3>
+      <p>Privacy & streaming</p>
+      <span>⭐ 4.8</span>
+      <button class="cta">View Deal →</button>
+    </div>
+
+    <div class="card glass">
+      <h3>Email Tool</h3>
+      <p>Marketing & automation</p>
+      <span>⭐ 4.7</span>
+      <button class="cta">View Deal →</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="container">
+  <h2>Why Choose Neospin</h2>
+
+  <div class="why-grid">
+    <div class="card glass">
+      ✔ Verified Tools  
+    </div>
+
+    <div class="card glass">
+      ✔ Expert Reviews  
+    </div>
+
+    <div class="card glass">
+      ✔ Updated Daily  
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section premium-cta">
+  <h2>Find the Best Tool Today</h2>
+  <button onclick="window.location.href='top-tools.html'">
+    Compare Now →
+  </button>
+</section>
+
+<footer>
+  <p>© 2026 Neospin</p>
+
+  <div class="footer-links">
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="cookies.html">Cookies</a>
+  </div>
+</footer>
+<!-- Age Verification Popup -->
+<div id="age-verification" class="age-overlay">
+  <div class="age-popup">
+    <h2>Age Verification</h2>
+    <p>You must be 18 or older to enter this site.</p>
+    <div class="age-buttons">
+      <button id="btn-yes">I am 18 or Older</button>
+      <button id="btn-no">I am Under 18</button>
+    </div>
+  </div>
+</div>
+ <script src ="script.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var yesBtn = document.getElementById("btn-yes");
+    var noBtn = document.getElementById("btn-no");
+ 
+    // Change these URLs as you want
+    var yesLink = "/home/";  
+    var noLink = "/home/";  
+ 
+    yesBtn.addEventListener("click", function () {
+      window.location.href = yesLink;
+    });
+ 
+    noBtn.addEventListener("click", function () {
+      window.location.href = noLink;
+    });
+  });
+</script>
+
+</body>
+</html>
