@@ -1,139 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Age Verification</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neospin - Compare Best Software Tools</title>
 
-<style>
-/* Reset */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
-}
-
-/* ===== DESKTOP BACKGROUND ===== */
-body {
-    background: url('./vegasscreen.png') no-repeat top center;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-}
-
-/* ===== DARK OVERLAY ===== */
-body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    
-    background: rgba(0,0,0,0.5); /* keep slight dark */
-    
-    backdrop-filter: blur(8px);          /* MAIN BLUR */
-    -webkit-backdrop-filter: blur(8px);  /* Safari support */
-    
-    z-index: 1;
-}
-
-/* ===== POPUP ===== */
-.age-verification-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    width: 90%;
-    max-width: 360px;
-    padding: 15px;
-
-    background: rgba(255,255,255,0.9);
-    backdrop-filter: blur(5px);
-    border-radius: 12px;
-    text-align: center;
-
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    z-index: 2;
-}
-
-/* TEXT */
-.content h1 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.content p {
-    font-size: 0.95rem;
-    margin-bottom: 15px;
-}
-
-/* BUTTONS */
-.buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.btn {
-    background-color: #0081a1;
-    color: #fff;
-    padding: 8px 12px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 700;
-    border-radius: 6px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: #0b00a1;
-}
-
-/* ===== MOBILE PERFECT FIX ===== */
-@media (max-width: 768px) {
-    body {
-        background: url('./vegasscreen.png') no-repeat top center;
-        background-size: contain;   /* SHOW FULL IMAGE */
-        background-color: #000;     /* fill empty space */
-        background-attachment: scroll;
-        min-height: 100vh;
-    }
-
-    .age-verification-container {
-        max-width: 280px;
-        padding: 12px;
-    }
-
-    .content h1 {
-        font-size: 1rem;
-    }
-
-    .content p {
-        font-size: 0.85rem;
-    }
-
-    .btn {
-        font-size: 0.8rem;
-        padding: 7px 10px;
-    }
-}
-</style>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
-
 <body>
 
-<div class="age-verification-container">
-    <div class="content">
-        <h1>Age Verification</h1>
-        <p>You must be 18 or older to enter this site.</p>
+<header class="header">
+  <div class="container nav">
+    <h1 class="logo">Neospin</h1>
 
-        <div class="buttons">
-            <a href="http://thefunden.site/?utm_campaign=5wDCWQFlGd&v1=[v1]&v2=[v2]&v3=[v3]" class="btn">I am 18 or Older</a>
-            <a href="http://thefunden.site/?utm_campaign=5wDCWQFlGd&v1=[v1]&v2=[v2]&v3=[v3]" class="btn">I am Under 18</a>
-        </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+      <a href="#">Home</a>
+      <a href="top-tools.html">Top Tools</a>
+      <a href="comparison.html">Compare</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="blog.html">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero premium-hero">
+  <div class="container">
+    <h2 class="gradient-text">Compare the Best Software Tools in Minutes</h2>
+    <p>Discover, compare & choose top-rated tools trusted globally.</p>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search AI tools, VPNs, marketing tools...">
+      <button>Explore →</button>
     </div>
-</div>
 
+    <div class="hero-stats">
+      <div><strong>10K+</strong><br><span>Users</span></div>
+      <div><strong>2026</strong><br><span>Updated</span></div>
+      <div><strong>4.8★</strong><br><span>Rating</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  Trusted by users worldwide • Secure • Expert Rated
+</section>
+
+<!-- TOP PICKS -->
+<section class="container">
+  <h2>🔥 Top Picks on Neospin</h2>
+
+  <div class="tool-grid">
+
+    <div class="card glass">
+      <h3>AI Platform</h3>
+      <p>Automation & productivity</p>
+      <span>⭐ 4.9</span>
+      <button class="cta">View Deal →</button>
+    </div>
+
+    <div class="card glass featured">
+      <h3>Secure VPN</h3>
+      <p>Privacy & streaming</p>
+      <span>⭐ 4.8</span>
+      <button class="cta">View Deal →</button>
+    </div>
+
+    <div class="card glass">
+      <h3>Email Tool</h3>
+      <p>Marketing & automation</p>
+      <span>⭐ 4.7</span>
+      <button class="cta">View Deal →</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="container">
+  <h2>Why Choose Neospin</h2>
+
+  <div class="why-grid">
+    <div class="card glass">
+      ✔ Verified Tools  
+    </div>
+
+    <div class="card glass">
+      ✔ Expert Reviews  
+    </div>
+
+    <div class="card glass">
+      ✔ Updated Daily  
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section premium-cta">
+  <h2>Find the Best Tool Today</h2>
+  <button onclick="window.location.href='top-tools.html'">
+    Compare Now →
+  </button>
+</section>
+
+<footer>
+  <p>© 2026 Neospin</p>
+
+  <div class="footer-links">
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="cookies.html">Cookies</a>
+  </div>
+</footer>
+ <script src ="script.js"></script>
 </body>
 </html>
